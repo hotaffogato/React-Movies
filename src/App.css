@@ -1,0 +1,126 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(234, 234, 234);
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.loading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+figure{
+  display: inline-block;
+  position: relative;
+}
+
+.poster{
+  scale: 1;
+  margin:auto;
+  margin-top: 30px;
+  display: block;
+  box-shadow: 6px 8px 6px rgb(0, 0, 0, .6);
+}
+
+figcaption{
+  transition: background-color 0.3s, color 0.3s;
+  position: absolute;
+  text-align: center;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding:10px;
+}
+
+:link{
+  text-decoration: none;
+  color:#000;
+}
+
+.title{
+  color:#fff;
+  display: none;
+}
+
+ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+ul{
+  margin-block: 0px;
+  padding-inline-start: 0px;
+  text-align: left;
+}
+
+.home-list{
+  display: none;
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding:3px 4px;
+  color:#fff;
+}
+
+figure :hover{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+figure :hover .title,
+figure :hover ul
+{
+  background-color: transparent;
+}
+
+figure :hover ul li{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+figure :hover .title,
+figure :hover ul li
+{
+  display: inline-block;
+}
+
+.detail{
+  text-align: center;
+}
+
+.Detail-page{
+  display: flex;
+  position: relative;
+}
+
+.left,
+.right
+{
+  display: inline-block;
+}
+
+.left{
+  scale: .8;
+}
+
+.left img{
+  box-shadow: 6px 8px 6px rgb(0, 0, 0, .6);
+}
+
+.right{
+  padding: 50px 30px;
+}
+
+.borderR,
+.detail-list:not(:last-child)
+{
+  margin-right: 5px;
+  padding-right: 7px;
+  border-right: 1px solid #000;
+}
